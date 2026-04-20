@@ -45,7 +45,7 @@
                 </p>
 
                 <div class="buttons">
-                    <button class="btn-play"><i class="fas fa-play"></i> Reproducir</button>
+                    <button id="PlayBtn" class="btn-play"><i class="fas fa-play"></i> Reproducir</button>
                     <button class="btn-info"><i class="fas fa-info-circle"></i> Más info</button>
                 </div>
             </div>
@@ -71,5 +71,16 @@
         </div>
 
     </div>
+        <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close-btn">&times;</span>
+            <video id="myVideo" controls>
+                <source src="video/nuestro-video.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
